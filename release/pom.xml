@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 <groupId>com.example</groupId>
     <artifactId>release</artifactId>
-    <version>3.5-SNAPSHOT</version>
+    <version>3.5</version>
 <packaging>pom</packaging>
 
     <properties>
@@ -15,7 +15,7 @@
         <url>${my.developer.url}</url>
         <connection>${my.developer.connection}</connection>
         <developerConnection>${my.developer.connection}</developerConnection>
-        <tag>release-3.4</tag>
+        <tag>release-3.5</tag>
     </scm>
 
     <modules>
