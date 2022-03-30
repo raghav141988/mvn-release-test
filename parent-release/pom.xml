@@ -26,6 +26,8 @@
         <developerConnection>${my.developer.connection}</developerConnection>
         <tag>parent-3.2</tag>
     </scm>
-
+<modules>
+    <module>parent</module>
+</modules>
 
 </project>
