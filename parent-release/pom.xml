@@ -8,6 +8,7 @@
     <artifactId>parent-release</artifactId>
     <groupId>com.example</groupId>
     <version>3.4-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <distributionManagement>
         <repository>
             <id>repsy</id>
