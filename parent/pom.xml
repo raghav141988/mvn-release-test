@@ -23,7 +23,7 @@
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>3.1</version>
+  <version>3.2-SNAPSHOT</version>
   <modules>
     <module>../child-1</module>
     <module>../child-2</module>
