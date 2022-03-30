@@ -38,7 +38,6 @@
                             <goal>perform</goal>
                         </goals>
                         <configuration>
-                            <basedir>release</basedir>
                             <pomFileName>pom.xml</pomFileName>
                         </configuration>
                     </execution>

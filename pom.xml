@@ -34,7 +34,7 @@
               <goal>perform</goal>
             </goals>
             <configuration>
-              <basedir>parent-release</basedir>
+              <basedir>release</basedir>
               <pomFileName>pom.xml</pomFileName>
             </configuration>
           </execution>
