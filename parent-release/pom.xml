@@ -25,7 +25,7 @@
     <packaging>pom</packaging>
     <version>2.5-SNAPSHOT</version>
     <modules>
-        <module>../parent</module>
+        <module>parent</module>
 
     </modules>
     <build>
@@ -40,7 +40,7 @@
                             <goal>perform</goal>
                         </goals>
                         <configuration>
-                            <pomFileName>../parent/pom.xml</pomFileName>
+                            <pomFileName>parent/pom.xml</pomFileName>
                         </configuration>
                     </execution>
                 </executions>
