@@ -28,7 +28,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <executions>
           <execution>
-            <id>default-cli</id>
+            <id>default</id>
             <goals>
               <goal>perform</goal>
             </goals>
