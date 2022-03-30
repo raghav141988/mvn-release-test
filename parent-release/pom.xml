@@ -11,7 +11,7 @@
     </distributionManagement>
 
     <properties>
-        <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
+        <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test/parent-release</my.developer.url>
         <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
     </properties>
     <scm>
@@ -23,7 +23,7 @@
     <groupId>org.example</groupId>
     <artifactId>parent-release</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>2.6-SNAPSHOT</version>
     <modules>
         <module>parent</module>
 
