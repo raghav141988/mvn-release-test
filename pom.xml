@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>mvn-release-test</artifactId>
-  <version>3.1-SNAPSHOT</version>
+  <version>3.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -20,7 +20,7 @@
 
   <modules>
     <module>another-no-release</module>
-    <module>parent-release</module>
+    <module>release</module>
   </modules>
   <build>
     <plugins>

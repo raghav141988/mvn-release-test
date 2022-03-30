@@ -4,7 +4,7 @@
     <artifactId>parent</artifactId>
     <groupId>org.example</groupId>
     <version>3.4-SNAPSHOT</version>
-    <relativePath>../parent/pom.xml</relativePath>
+    <relativePath>../release/parent/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
