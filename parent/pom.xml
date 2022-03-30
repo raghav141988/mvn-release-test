@@ -18,12 +18,12 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>mvn-release-test-2.3</tag>
+    <tag>parent-2.3</tag>
   </scm>
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>2.3</version>
+  <version>2.4-SNAPSHOT</version>
   <modules>
     <module>../child-1</module>
     <module>../child-2</module>
