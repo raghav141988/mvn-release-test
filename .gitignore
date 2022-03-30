@@ -1,0 +1,9 @@
+/.idea/
+*.iml
+/*.ipr
+/*/*.iml
+/target/
+*.releaseBackup
+target
+release.properties
+.DS_Store
