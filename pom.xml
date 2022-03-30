@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>mvn-release-test</artifactId>
-  <version>2.4-SNAPSHOT</version>
+  <version>3.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -20,7 +20,26 @@
 
   <modules>
     <module>parent</module>
-    <module>parent-release</module>
+    <module>another-no-release</module>
   </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default-cli</id>
+            <goals>
+              <goal>perform</goal>
+            </goals>
+            <configuration>
+              <pomFileName>parent/pom.xml</pomFileName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
