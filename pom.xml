@@ -19,8 +19,8 @@
   </scm>
 
   <modules>
-    <module>parent</module>
     <module>another-no-release</module>
+    <module>parent-release</module>
   </modules>
   <build>
     <plugins>
@@ -34,7 +34,7 @@
               <goal>perform</goal>
             </goals>
             <configuration>
-              <basedir>parent</basedir>
+              <basedir>parent-release</basedir>
               <pomFileName>pom.xml</pomFileName>
             </configuration>
           </execution>
