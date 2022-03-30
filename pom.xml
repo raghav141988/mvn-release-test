@@ -29,7 +29,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <executions>
           <execution>
-            <id>default</id>
+            <id>default-cli</id>
             <goals>
               <goal>perform</goal>
             </goals>
