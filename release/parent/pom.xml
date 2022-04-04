@@ -23,13 +23,13 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>parent-3.8</tag>
+    <tag>parent-3.8-SNAPSHOT</tag>
   </scm>
 
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <version>3.8</version>
+  <version>3.9-SNAPSHOT</version>
   <modules>
     <module>child-1</module>
     <module>child-2</module>
