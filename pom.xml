@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
-  <version>3.16-SNAPSHOT</version>
+  <version>3.16</version>
   <modules>
     <module>another-module</module>
   </modules>
@@ -27,7 +27,7 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>HEAD</tag>
+    <tag>parent-3.16</tag>
   </scm>
 
   <profiles>
