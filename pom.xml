@@ -3,14 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>mvn-release-test</artifactId>
-  <version>3.4-SNAPSHOT</version>
+  <artifactId>parent</artifactId>
+  <version>3.13-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
     <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
     <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
   </properties>
+  <distributionManagement>
+    <repository>
+      <id>repsy</id>
+      <name>My Private Maven Repository on Repsy</name>
+      <url>https://repo.repsy.io/mvn/raghu141988/testrepo</url>
+    </repository>
+  </distributionManagement>
+
+
   <scm>
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
@@ -18,8 +27,29 @@
     <tag>HEAD</tag>
   </scm>
 
-  <modules>
-    <module>another-no-release</module>
-  </modules>
+  <profiles>
+    <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+<!--        <property>-->
+<!--          <name>default</name>-->
+<!--          <value>!disabled</value>-->
+<!--        </property>-->
+      </activation>
+      <modules>
+        <module>child-1</module>
+        <module>child-2</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>horizon</id>
+      <modules>
+        <module>another-no-release</module>
+        <module>uncle</module>
+      </modules>
+    </profile>
+  </profiles>
+
 
 </project>
