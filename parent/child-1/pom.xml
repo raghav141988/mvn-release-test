@@ -9,6 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>child-1</artifactId>
+  <packaging>pom</packaging>
   <modules>
     <module>sub-child</module>
 
