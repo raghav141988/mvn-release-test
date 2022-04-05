@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+<groupId>org.example</groupId>
+    <version>3.16-SNAPSHOT</version>
+    <artifactId>another-module</artifactId>
+<packaging>pom</packaging>
+
+   <properties>
+    <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
+    <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
+</properties>
+<distributionManagement>
+<repository>
+    <id>repsy</id>
+    <name>My Private Maven Repository on Repsy</name>
+    <url>https://repo.repsy.io/mvn/raghu141988/testrepo</url>
+</repository>
+</distributionManagement>
+
+
+<scm>
+<url>${my.developer.url}</url>
+<connection>${my.developer.connection}</connection>
+<developerConnection>${my.developer.connection}</developerConnection>
+<tag>HEAD</tag>
+</scm>
+
+    <modules>
+        <module>another-no-release</module>
+        <module>uncle</module>
+    </modules>
+</project>
