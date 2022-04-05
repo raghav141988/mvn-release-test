@@ -5,6 +5,24 @@
   <groupId>org.example</groupId>
   <artifactId>uncle</artifactId>
   <version>3.15-SNAPSHOT</version>
+  <properties>
+  <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
+  <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
+</properties>
+<distributionManagement>
+<repository>
+  <id>repsy</id>
+  <name>My Private Maven Repository on Repsy</name>
+  <url>https://repo.repsy.io/mvn/raghu141988/testrepo</url>
+</repository>
+</distributionManagement>
 
+
+<scm>
+<url>${my.developer.url}</url>
+<connection>${my.developer.connection}</connection>
+<developerConnection>${my.developer.connection}</developerConnection>
+<tag>HEAD</tag>
+</scm>
 
 </project>
