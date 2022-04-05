@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
-  <version>3.14-SNAPSHOT</version>
+  <version>3.14</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -24,7 +24,7 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>HEAD</tag>
+    <tag>parent-3.14</tag>
   </scm>
 
   <profiles>
