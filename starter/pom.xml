@@ -11,7 +11,68 @@
     <version>3.19-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
-        <commons.version>3.18-SNAPSHOT</commons.version>
+        <commons.version>3.19-SNAPSHOT</commons.version>
+        <checkstyle.version>8.43</checkstyle.version>
     </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
 
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${maven.plugin.checkstyle.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>${checkstyle.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.example</groupId>
+                            <artifactId>child2</artifactId>
+                            <version>${commons.version}</version>
+                        </dependency>
+                    </dependencies>
+
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <version>${maven.plugin.pmd.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.vmware.vidm.common</groupId>
+                            <artifactId>vidm-common-build-tools</artifactId>
+                            <version>${vidm.common.build-tools.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <linkXRef>true</linkXRef>
+                        <sourceEncoding>utf-8</sourceEncoding>
+                        <minimumTokens>100</minimumTokens>
+                        <targetJdk>1.8</targetJdk>
+                        <analysisCache>true</analysisCache> <!-- enable incremental analysis -->
+                        <analysisCacheLocation>${project.build.directory}/pmd/pmd.cache
+                        </analysisCacheLocation> <!-- Optional: points to this location by default -->
+                        <failOnViolation>true</failOnViolation>
+                        <excludes>
+                            <exclude>**/*Tests.java</exclude>
+                            <exclude>**/*Test.java</exclude>
+                            <exclude>**/generated/*.java</exclude>
+                        </excludes>
+                        <excludeRoots>
+                            <excludeRoot>target/generated-sources/stubs</excludeRoot>
+                        </excludeRoots>
+                        <rulesets>
+                            <ruleset>static-code-analysis/vidm_pmd.xml</ruleset>
+                        </rulesets>
+                        <printFailingErrors>true</printFailingErrors>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+    </build>
 </project>
