@@ -6,7 +6,11 @@
   <artifactId>parent</artifactId>
   <version>3.17-SNAPSHOT</version>
   <modules>
-    <module>another-module</module>
+
+      <module>child-1</module>
+      <module>child-2</module>
+      <module>starter</module>
+
   </modules>
   <packaging>pom</packaging>
 
@@ -30,28 +34,29 @@
     <tag>HEAD</tag>
   </scm>
 
-  <profiles>
-    <profile>
-      <id>default</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-<!--        <property>-->
-<!--          <name>default</name>-->
-<!--          <value>!disabled</value>-->
-<!--        </property>-->
-      </activation>
-      <modules>
-        <module>child-1</module>
-        <module>child-2</module>
-      </modules>
-    </profile>
-    <profile>
-      <id>horizon</id>
-      <modules>
-        <module>another-module</module>
-      </modules>
-    </profile>
-  </profiles>
+<!--  <profiles>-->
+<!--    <profile>-->
+<!--      <id>default</id>-->
+<!--      <activation>-->
+<!--        <activeByDefault>true</activeByDefault>-->
+<!--&lt;!&ndash;        <property>&ndash;&gt;-->
+<!--&lt;!&ndash;          <name>default</name>&ndash;&gt;-->
+<!--&lt;!&ndash;          <value>!disabled</value>&ndash;&gt;-->
+<!--&lt;!&ndash;        </property>&ndash;&gt;-->
+<!--      </activation>-->
+<!--      <modules>-->
+<!--        <module>child-1</module>-->
+<!--        <module>child-2</module>-->
+<!--      </modules>-->
+<!--    </profile>-->
+<!--&lt;!&ndash;    <profile>&ndash;&gt;-->
+<!--&lt;!&ndash;      <id>horizon</id>&ndash;&gt;-->
+<!--&lt;!&ndash;      <modules>&ndash;&gt;-->
+<!--&lt;!&ndash;        <module>another-module</module>&ndash;&gt;-->
+<!--&lt;!&ndash;      </modules>&ndash;&gt;-->
+<!--&lt;!&ndash;    </profile>&ndash;&gt;-->
+<!--  </profiles>-->
+
 
 
 </project>
