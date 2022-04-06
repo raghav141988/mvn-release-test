@@ -17,7 +17,7 @@
   <properties>
     <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
     <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
-    <build.version>3.20-SNAPSHOT</build.version>
+    <version>3.20-SNAPSHOT</version>
   </properties>
   <distributionManagement>
     <repository>
@@ -28,14 +28,15 @@
   </distributionManagement>
 <dependencyManagement>
   <dependencies>
+
     <dependency>
       <groupId>org.example</groupId>
-      <artifactId>child-1</artifactId>
+      <artifactId>child-2</artifactId>
       <version>${build.version}</version>
     </dependency>
     <dependency>
       <groupId>org.example</groupId>
-      <artifactId>child-2</artifactId>
+      <artifactId>child-1</artifactId>
       <version>${build.version}</version>
     </dependency>
   </dependencies>
@@ -45,7 +46,7 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>HEAD</tag>
+    <tag>parent-3.19</tag>
   </scm>
 
 <!--  <profiles>-->
