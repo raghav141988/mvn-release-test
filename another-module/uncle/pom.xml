@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>uncle</artifactId>
-  <version>3.18-SNAPSHOT</version>
+  <version>4.19-SNAPSHOT</version>
   <properties>
   <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
   <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
