@@ -12,7 +12,7 @@
 <dependencies>
   <dependency>
     <groupId>org.example</groupId>
-    <artifactId>child-1</artifactId>
+    <artifactId>sub-child</artifactId>
   </dependency>
 </dependencies>
 
