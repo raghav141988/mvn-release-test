@@ -39,6 +39,11 @@
       <artifactId>child-1</artifactId>
       <version>${common.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>sub-child</artifactId>
+      <version>${common.version}</version>
+    </dependency>
   </dependencies>
 </dependencyManagement>
 
