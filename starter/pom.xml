@@ -9,6 +9,9 @@
     <groupId>org.example</groupId>
     <artifactId>starter</artifactId>
     <version>3.18-SNAPSHOT</version>
-
+    <packaging>pom</packaging>
+    <properties>
+        <commons.version>3.18-SNAPSHOT</commons.version>
+    </properties>
 
 </project>
