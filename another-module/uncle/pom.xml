@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>uncle</artifactId>
-  <version>4.19</version>
+  <version>4.20-SNAPSHOT</version>
   <properties>
   <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
   <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
@@ -22,7 +22,7 @@
 <url>${my.developer.url}</url>
 <connection>${my.developer.connection}</connection>
 <developerConnection>${my.developer.connection}</developerConnection>
-<tag>uncle-4.19</tag>
+<tag>HEAD</tag>
 </scm>
 
 </project>
