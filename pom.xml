@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
-  <version>3.25-SNAPSHOT</version>
+  <version>3.25</version>
 
   <packaging>pom</packaging>
 
@@ -45,7 +45,7 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>parent-3.19</tag>
+    <tag>parent-3.25</tag>
   </scm>
 
   <profiles>
