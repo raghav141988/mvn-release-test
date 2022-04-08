@@ -4,14 +4,14 @@
 
   <groupId>org.example</groupId>
   <artifactId>parent</artifactId>
-  <version>3.22</version>
+  <version>3.23-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
   <properties>
     <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
     <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
-    <common.version>3.22</common.version>
+    <common.version>3.23-SNAPSHOT</common.version>
   </properties>
   <distributionManagement>
     <repository>
@@ -45,7 +45,7 @@
     <url>${my.developer.url}</url>
     <connection>${my.developer.connection}</connection>
     <developerConnection>${my.developer.connection}</developerConnection>
-    <tag>parent-3.22</tag>
+    <tag>parent-3.19</tag>
   </scm>
 
   <profiles>
