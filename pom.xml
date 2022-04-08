@@ -11,7 +11,7 @@
   <properties>
     <my.developer.url>https://github.com/randomdotnextrandom/mvn-release-test</my.developer.url>
     <my.developer.connection>scm:git:ssh://git@github.com:/randomdotnextrandom/mvn-release-test.git</my.developer.connection>
-    <common.version>3.25-SNAPSHOT</common.version>
+    <common.version>3.26-SNAPSHOT</common.version>
   </properties>
   <distributionManagement>
     <repository>
