@@ -13,6 +13,7 @@
   <dependency>
     <groupId>org.example</groupId>
     <artifactId>sub-child</artifactId>
+    <version>${vidm.commons.version}</version>
   </dependency>
 </dependencies>
 
